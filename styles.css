@@ -209,4 +209,26 @@ button:hover, .button:hover {
   color: #714FD7;
 }
 
+.hero {
+  min-height: 100vh;
+}
+.hero__img {
+  text-align: center;
+}
+.hero__img img {
+  height: 230px;
+}
+.hero__title .name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.525em;
+  color: #714FD7;
+}
+.hero__title .occupation:first-of-type {
+  margin-bottom: 0.5rem;
+}
+.hero__cta {
+  padding-top: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
