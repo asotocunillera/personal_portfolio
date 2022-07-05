@@ -121,4 +121,68 @@ button:hover, .button:hover {
   padding-bottom: 1.5rem;
 }
 
+#navBar {
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EBF5EE;
+  opacity: 90%;
+}
+.navbar__theme-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.navbar__theme-icon.dark-mode {
+  background: url(../assets/img/moon.svg);
+}
+.navbar__theme-icon.light-mode {
+  background: url(../assets/img/sun.svg);
+}
+.navbar__hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.navbar__hamburger span {
+  transition: all 200ms ease-in-out;
+  display: block;
+  border-radius: 3px;
+  height: 3px;
+  background-color: #F25F60;
+}
+.navbar__hamburger span:not(:last-child) {
+  margin-bottom: 4px;
+  width: 20px;
+}
+.navbar__hamburger span:last-child {
+  width: 10px;
+}
+
+.navbar-menu {
+  height: calc(100vh - 5rem);
+  background-color: #EBF5EE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-menu h2 {
+  margin-top: 0;
+  cursor: pointer;
+}
+.navbar-menu h2 + h2 {
+  padding-top: 2rem;
+}
+.navbar-menu h2:hover {
+  color: #714FD7;
+}
+
 /*# sourceMappingURL=styles.css.map */
