@@ -23,6 +23,11 @@ body {
   line-height: 1.4;
   color: #1F0322;
   background-color: #EBF5EE;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background-color: #1F0322;
+  color: #EBF5EE;
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, div::selection {
@@ -131,8 +136,8 @@ button:hover, .button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EBF5EE;
   opacity: 90%;
+  transition: 0.3s ease all;
 }
 .navbar__theme-icon {
   cursor: pointer;
@@ -165,14 +170,33 @@ button:hover, .button:hover {
 .navbar__hamburger span:last-child {
   width: 10px;
 }
+.navbar__hamburger.open > span:first-child {
+  transform: translateY(7px) rotate(45deg);
+  transform-origin: initial;
+}
+.navbar__hamburger.open > span:nth-child(2) {
+  transform: translateX(1rem);
+  opacity: 0;
+}
+.navbar__hamburger.open > span:last-child {
+  width: 20px;
+  transform: translateY(-7px) rotate(-45deg);
+  transform-origin: initial;
+}
 
 .navbar-menu {
+  visibility: hidden;
+  opacity: 0;
   height: calc(100vh - 5rem);
-  background-color: #EBF5EE;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease all;
+}
+.navbar-menu.open {
+  visibility: visible;
+  opacity: 1;
 }
 .navbar-menu h2 {
   margin-top: 0;
