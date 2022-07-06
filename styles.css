@@ -328,4 +328,13 @@ body.dark .skills__charts .chart__bac {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+@keyframes anim-ex {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
