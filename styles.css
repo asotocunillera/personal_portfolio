@@ -146,18 +146,16 @@ button:hover, .button:hover {
 body.dark .navbar {
   background-color: #1F0322;
 }
-.navbar.open {
+nav.open .navbar {
   opacity: 1;
 }
 .navbar__theme-icon {
   cursor: pointer;
   width: 20px;
   height: 20px;
-}
-.navbar__theme-icon.dark-mode {
   background: url(../assets/img/moon.svg);
 }
-.navbar__theme-icon.light-mode {
+body.dark .navbar__theme-icon {
   background: url(../assets/img/sun.svg);
 }
 .navbar__hamburger {
@@ -208,7 +206,7 @@ body.dark .navbar {
 body.dark .navbar-menu {
   background-color: #1F0322;
 }
-.navbar-menu.open {
+nav.open .navbar-menu {
   visibility: visible;
   opacity: 1;
 }
