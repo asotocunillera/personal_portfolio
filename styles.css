@@ -45,6 +45,9 @@ h1 {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
+h1.title {
+  font-size: 3.125rem;
+}
 
 h2 {
   margin-top: 0;
@@ -241,6 +244,29 @@ body.dark .navbar-menu {
 }
 .hero__cta {
   padding-top: 2rem;
+}
+
+.about-me {
+  text-align: center;
+}
+.about-me__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me__body h3.text-info {
+  font-size: 2rem;
+  color: #1F0322;
+}
+body.dark .about-me__body h3.text-info {
+  color: #EBF5EE;
+}
+.about-me__body h3.text-info span {
+  color: #F25F60;
+}
+.about-me__body a, .about-me__body p {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
