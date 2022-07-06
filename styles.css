@@ -267,4 +267,65 @@ body.dark .about-me__body h3.text-info {
   margin-bottom: 2rem;
 }
 
+.skills {
+  text-align: center;
+}
+.skills__filters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.skills__filters button {
+  margin: 0.5rem;
+}
+.skills__charts .chart {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.skills__charts .chart.visible {
+  display: block;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 1rem 0;
+}
+.skills__charts .chart__label {
+  flex: 2;
+  padding-right: 0.625rem;
+  font-family: Bogart, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+.skills__charts .chart__bac {
+  flex: 4;
+  width: 100%;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #1F0322;
+}
+body.dark .skills__charts .chart__bac {
+  background-color: #EBF5EE;
+}
+.skills__charts .chart__bar {
+  height: 20px;
+  background: linear-gradient(169.22deg, #FF8552, #F25F60);
+  border-radius: 30px;
+  animation: 1s anim-ex ease forwards;
+}
+.skills__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.skills__cards .card {
+  text-align: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  padding: 2rem;
+  margin: 3rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /*# sourceMappingURL=styles.css.map */
