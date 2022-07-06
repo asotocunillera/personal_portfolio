@@ -126,7 +126,7 @@ button:hover, .button:hover {
   padding-bottom: 1.5rem;
 }
 
-#navBar {
+#nav {
   height: 5rem;
   position: fixed;
   width: 100%;
@@ -136,8 +136,15 @@ button:hover, .button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 90%;
+  opacity: 0.9;
+  background-color: #EBF5EE;
   transition: 0.3s ease all;
+}
+body.dark .navbar {
+  background-color: #1F0322;
+}
+.navbar.open {
+  opacity: 1;
 }
 .navbar__theme-icon {
   cursor: pointer;
@@ -192,7 +199,11 @@ button:hover, .button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #EBF5EE;
   transition: 0.3s ease all;
+}
+body.dark .navbar-menu {
+  background-color: #1F0322;
 }
 .navbar-menu.open {
   visibility: visible;
