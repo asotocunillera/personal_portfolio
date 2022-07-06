@@ -7,6 +7,8 @@ const themeFilter = document.querySelector("#themeFilter");
 const skillFilter = document.querySelector("#skillFilter");
 const skillCharts = document.querySelectorAll("#skillCharts .chart");
 
+const qualificationFilters = document.querySelector("#qualificationFilters");
+
 navHamburger.addEventListener("click", ()=>{
   nav.classList.toggle('open');
 })
@@ -28,5 +30,19 @@ skillFilter.addEventListener("click", (e) =>{
         el.dataset.skill.includes(selectedFilter) ? el.classList.add("visible") : el.classList.remove("visible")
       })
     }
+  }
+})
+
+// TODO: refactor this event
+qualificationFilters.addEventListener("click", (e) =>{
+  let selectedFilter = e.target.closest(".qualification__filters__filter");
+  let dataFilter = selectedFilter.getAttribute("data-filter");
+  let activeFilter = document.querySelector(".qualification__filters__filter.active");
+  let activeDataFilter = activeFilter.getAttribute("data-filter");
+  if (!selectedFilter.classList.contains('active')){
+    activeFilter.classList.remove('active');
+    selectedFilter.classList.add('active');
+    document.querySelector(`[data-qualification="${dataFilter}"]`).classList.add('active');
+    document.querySelector(`[data-qualification="${activeDataFilter}"]`).classList.remove('active');
   }
 })

@@ -336,5 +336,102 @@ body.dark .skills__charts .chart__bac {
     width: 100%;
   }
 }
+.qualification {
+  text-align: center;
+}
+.qualification__filters {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.qualification__filters__filter {
+  display: flex;
+  align-items: center;
+}
+.qualification__filters__filter .icon {
+  padding-right: 0.5rem;
+  width: 30px;
+  height: 30px;
+  fill: #1F0322;
+}
+body.dark .qualification__filters__filter .icon {
+  fill: #EBF5EE;
+}
+.qualification__filters__filter h3 {
+  color: #1F0322;
+}
+body.dark .qualification__filters__filter h3 {
+  color: #EBF5EE;
+}
+.qualification__filters__filter.active h3 {
+  color: #714FD7;
+}
+body.dark .qualification__filters__filter.active h3 {
+  color: #714FD7;
+}
+.qualification__filters__filter.active .icon {
+  fill: #714FD7;
+}
+body.dark .qualification__filters__filter.active .icon {
+  fill: #714FD7;
+}
+.qualification__list {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+}
+.qualification__list:not(.active) {
+  display: none;
+}
+.qualification__list .rows {
+  width: 100%;
+}
+.qualification__list .rows .row {
+  display: flex;
+  width: 100%;
+}
+.qualification__list .rows .row .elements {
+  width: 50%;
+  padding: 0.7rem;
+}
+.qualification__list .rows .row .elements.odd {
+  position: relative;
+  border-right: 2px #714FD7 solid;
+  text-align: right;
+}
+.qualification__list .rows .row .elements.odd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #714FD7;
+}
+.qualification__list .rows .row .elements__title {
+  font-family: Bogart, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 1rem;
+  color: #1F0322;
+}
+body.dark .qualification__list .rows .row .elements__title {
+  color: #EBF5EE;
+}
+.qualification__list .rows .row .elements__company {
+  font-family: Bogart, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #F25F60;
+}
+.qualification__list .rows .row .elements__duration {
+  font-size: 0.75rem;
+  color: #1F0322;
+  opacity: 0.4;
+}
+body.dark .qualification__list .rows .row .elements__duration {
+  color: #EBF5EE;
+}
 
 /*# sourceMappingURL=styles.css.map */
