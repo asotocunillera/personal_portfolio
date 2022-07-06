@@ -221,6 +221,7 @@ body.dark .navbar-menu {
 }
 
 .hero {
+  padding-top: 6.5rem;
   min-height: 100vh;
 }
 .hero__img {
